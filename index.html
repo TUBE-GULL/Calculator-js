@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"> //установка на мобильные устройствах нет скрола! -->
+   <!-- <meta name="format-detection" content="telephone=no"> // отменяет ссылку на номер телефона ! (ios) -->
+   <!-- <meta name="description" content="До 140 символов краткая описания страницы !"> // для seo -->
+   <!-- <meta name="keywords" content="слова характеризующие страницу не больше 20"> //для seo -->
+   <!-- <meta name="robots" content="">// в шпаргалке все данные -->
+   <meta name="robots" content="none"> <!-- //запрет индексации страницы  до настройки  -->
+   <!-- // Технические//
+   <meta name="Author" content="Автор страницы">
+   <meta name="Copyright" content="Авторские права">
+   <meta name="Address" content="Адрес автора">
+   <meta http-equiv="refresh" content="S; url=URL"> //Редирект (перезагрузка) страницы. Задержка в секундах; url=Адрес сайта/страницы -->
+   <!-- Для социальных сетей данные в шпаргалке ! -->
+   <link rel="stylesheet" href="css/style.css">
+   <title>Calculator</title>
+</head>
+
+<body>
+   <header class="header">
+      <table class="calculator" width="100%">
+
+         <tbody class="blok-calculator">
+
+            <tr>
+               <th colspan="4">
+                  <h1>Calculator</h1>
+               </th>
+            </tr>
+
+            <tr>
+               <th colspan="4"><input class="window-accounts" type="text" min="0"></th>
+            </tr>
+
+            <tr>
+               <th colspan="2"><button class="erase">С</button></th>
+               <th><button class="del">DEL</button></th>
+               <th class="th-division" id="operator"><button class="division">&divide</button></th>
+            </tr>
+
+            <tr>
+               <th><button class="one" id="namber">1</button></th>
+               <th><button class="two" id="namber">2</button></th>
+               <th><button class="thee" id="namber">3</button></th>
+               <th><button class="multiplication" id="operator">*</button></th>
+            </tr>
+
+            <tr>
+               <th><button class="four" id="namber">4</button></th>
+               <th><button class="five" id="namber">5</button></th>
+               <th><button class="six" id="namber">6</button></th>
+               <th><button class="plus" id="operator">+</button></th>
+            </tr>
+
+            <tr>
+               <th><button class="seven" id="namber">7</button></th>
+               <th><button class="eight" id="namber">8</button></th>
+               <th><button class="nine" id="namber">9</button></th>
+               <th><button class="minus" id="operator">-</button></th>
+            </tr>
+
+            <tr>
+               <th><button class="dot">.</button></th>
+               <th><button class="zero" id="namber">0</button></th>
+               <th colspan="2"><button class="equals">=</button></th>
+            </tr>
+
+         </tbody>
+
+      </table>
+   </header>
+
+   <script src="js/script.js"></script>
+</body>
+
+</html>
