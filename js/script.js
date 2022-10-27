@@ -8,19 +8,28 @@ const equalsButton = document.querySelector('.equals');           // ровно
 let isDotEnabled = true;
 
 //*************************************************************** // запрещает нажимать на клавижи кроме исключения 
-windowAccounts.addEventListener('keydown', (e) => {
-   if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight' && e.key !== 'Backspace') {
+window.addEventListener('keydown', (e) => {
+   if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight' && e.key !== 'F12') {
       e.preventDefault()
    }
+   if (e.key == 'Backspace') {
+      eraseExecute();
+   }
+   if (e.key == 'Delete') {
+      deleteExecute();
+   }
+
 });
 
 //******************* action  delButton **************************** // удалить все значения ''
-delButton.addEventListener('click', (e) => {
+const deleteExecute = () => {
    windowAccounts.value = '';
-});
+}
+
+delButton.addEventListener('click', (e) => deleteExecute());
 
 //******************* action  erase ****************************    // удалить одно значения 
-const eraseExecute = (e) => {
+const eraseExecute = () => {
    windowAccounts.value = windowAccounts.value.slice(0, -1);
 }
 
